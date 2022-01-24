@@ -35,7 +35,20 @@ namespace Building
         public override void ShowInfo()
         {
             Console.WriteLine($"James house space is {Space} m2");
-            Console.WriteLine($"It's {status}.");
+
+            if (Space<=50)
+            {
+                Console.WriteLine("It's small house.");
+            }
+            else if (Space>50 && Space<150)
+            {
+                Console.WriteLine("It's middle house.");
+            }
+            else
+            {
+                Console.WriteLine("It's big house.");
+            }
+
         }
     }
 
